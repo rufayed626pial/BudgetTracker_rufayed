@@ -1,0 +1,28 @@
+<web-app>
+    <servlet>
+        <servlet-name>AddBudgetServlet</servlet-name>
+        <servlet-class>com.budget.AddBudgetServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AddBudgetServlet</servlet-name>
+        <url-pattern>/AddBudgetServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>EditBudgetServlet</servlet-name>
+        <servlet-class>com.budget.EditBudgetServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>EditBudgetServlet</servlet-name>
+        <url-pattern>/EditBudgetServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>DeleteBudgetServlet</servlet-name>
+        <servlet-class>com.budget.DeleteBudgetServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DeleteBudgetServlet</servlet-name>
+        <url-pattern>/DeleteBudgetServlet</url-pattern>
+    </servlet-mapping>
+</web-app>

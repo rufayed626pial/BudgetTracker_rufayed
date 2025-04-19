@@ -1,112 +1,79 @@
-# BudgetTracker_rufayed
-# Budget Tracker 💸
+## Welcome to Apache Tomcat!
 
-A simple Java-based web application for managing your budget, built with **Tomcat**, **MySQL** (via XAMPP), and **JSP** for the front end. The application allows users to add, edit, delete, and view budget entries with a title, amount, and details. Each entry has a timestamp of when it was created.
+### What Is It?
 
-## Features ✨
+The Apache Tomcat® software is an open source implementation of the Java
+Servlet, JavaServer Pages, Java Expression Language and Java WebSocket
+technologies. The Java Servlet, JavaServer Pages, Java Expression Language and
+Java WebSocket specifications are developed under the
+[Java Community Process](https://jcp.org/en/introduction/overview).
 
-- **Add Budget**: Allows users to input a title, amount, and details for a new budget entry. 📝
-- **Edit Budget**: Users can edit the details of an existing budget entry. ✏️
-- **Delete Budget**: Users can remove a budget entry. 🗑️
-- **View All Budgets**: View a list of all budgets with the date and time they were created. 📅
+The Apache Tomcat software is developed in an open and participatory
+environment and released under the
+[Apache License version 2](https://www.apache.org/licenses/). The Apache Tomcat
+project is intended to be a collaboration of the best-of-breed developers from
+around the world. We invite you to participate in this open development
+project. To learn more about getting involved,
+[click here](https://tomcat.apache.org/getinvolved.html) or keep reading.
 
-## Technologies Used 🛠️
+Apache Tomcat software powers numerous large-scale, mission-critical web
+applications across a diverse range of industries and organizations. Some of
+these users and their stories are listed on the
+[PoweredBy wiki page](https://cwiki.apache.org/confluence/display/TOMCAT/PoweredBy).
 
-- **Backend**: Java (JSP, Servlets) ☕
-- **Database**: MySQL (via XAMPP) 🗄️
-- **Web Server**: Apache Tomcat 🚀
-- **Frontend**: HTML, CSS (Minimalist UI) 🎨
+Apache Tomcat, Tomcat, Apache, the Apache feather, and the Apache Tomcat
+project logo are trademarks of the Apache Software Foundation.
 
-## Prerequisites 🖥️
+### Get It
 
-Before running the project, make sure you have the following installed:
+For every major Tomcat version there is one download page containing
+links to the latest binary and source code downloads, but also
+links for browsing the download directories and archives:
+- [Tomcat 11](https://tomcat.apache.org/download-11.cgi)
+- [Tomcat 10](https://tomcat.apache.org/download-10.cgi)
+- [Tomcat 9](https://tomcat.apache.org/download-90.cgi)
 
-1. **JDK** (Java Development Kit) – For running the Java code. ☕
-2. **Tomcat** – For running the web application. 🌐
-3. **MySQL** (via XAMPP) – For the database. 🗃️
-4. **Git** – For version control (optional, if you want to clone or manage your code). 🧑‍💻
+To facilitate choosing the right major Tomcat version one, we have provided a
+[version overview page](https://tomcat.apache.org/whichversion.html).
 
-## Setup 🔧
+### Documentation
 
-### Step 1: Clone the repository
+The documentation available as of the date of this release is
+included in the docs webapp which ships with tomcat. You can access that webapp
+by starting tomcat and visiting <http://localhost:8080/docs/> in your browser.
+The most up-to-date documentation for each version can be found at:
+- [Tomcat 11](https://tomcat.apache.org/tomcat-11.0-doc/)
+- [Tomcat 10](https://tomcat.apache.org/tomcat-10.1-doc/)
+- [Tomcat 9](https://tomcat.apache.org/tomcat-9.0-doc/)
 
-Clone this repository to your local machine:
+### Installation
 
-```bash
-git clone https://github.com/yourusername/BudgetTracker.git
-```
+Please see [RUNNING.txt](RUNNING.txt) for more info.
 
-### Step 2: Configure the MySQL Database
+### Licensing
 
-- Start XAMPP and ensure MySQL is running. 🔴
-- Open phpMyAdmin in your browser (usually at `http://localhost/phpmyadmin`). 🖥️
-- Create a new database called `budget_tracker`. 🗂️
-- Run the following SQL query to create the `budgets` table:
+Please see [LICENSE](LICENSE) for more info.
 
-```sql
-CREATE TABLE budgets (
-    id INT AUTO_INCREMENT PRIMARY KEY,
-    title VARCHAR(255) NOT NULL,
-    amount DECIMAL(10, 2) NOT NULL,
-    details TEXT NOT NULL,
-    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
-);
-```
+### Support and Mailing List Information
 
-### Step 3: Configure the Database Connection
+* Free community support is available through the
+[tomcat-users](https://tomcat.apache.org/lists.html#tomcat-users) email list and
+a dedicated [IRC channel](https://tomcat.apache.org/irc.html) (#tomcat on
+Freenode).
 
-Update the `DBConnection.java` file to match your MySQL setup. Change the following:
+* If you want freely available support for running Apache Tomcat, please see the
+resources page [here](https://tomcat.apache.org/findhelp.html).
 
-```java
-private static final String DB_URL = "jdbc:mysql://localhost:3306/budget_tracker";  // Change the database name if needed
-private static final String USER = "root";  // Your MySQL username
-private static final String PASS = "";  // Your MySQL password (default is empty for XAMPP)
-```
+* If you want to be informed about new code releases, bug fixes,
+security fixes, general news and information about Apache Tomcat, please
+subscribe to the
+[tomcat-announce](https://tomcat.apache.org/lists.html#tomcat-announce) email
+list.
 
-### Step 4: Deploy the Project to Tomcat
+* If you have a concrete bug report for Apache Tomcat, please see the
+instructions for reporting a bug
+[here](https://tomcat.apache.org/bugreport.html).
 
-- Copy the entire project folder to the `webapps` directory of your Tomcat server. 📂
-- Start Tomcat by running `startup.bat` (in the `bin` folder). ⚡
-- Open your browser and navigate to `http://localhost:8080/BudgetTracker`. 🌐
+### Contributing
 
----
-
-### Step 5: Using the Application
-
-- **Add a budget**: Enter a title, amount, and details, then click "Add Budget." 💡
-- **Edit a budget**: Click "Edit" next to the budget you want to modify. ✏️
-- **Delete a budget**: Click "Delete" next to the budget you want to remove. 🗑️
-- **View all budgets**: The list of all budgets will be displayed with the creation date and time. 📅
-
----
-
-## Contributing 🤝
-
-If you'd like to contribute to this project:
-
-- Fork the repository. 🍴
-- Create a new branch for your feature (`git checkout -b feature-name`).
-- Commit your changes (`git commit -am 'Add new feature'`).
-- Push to the branch (`git push origin feature-name`).
-- Create a new pull request. 🔄
-
----
-
-## License 📜
-
-MIT License
-Copyright © 2025 [MD. Rufayed Islam]
-
-Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the “Software”), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES, OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
-
----
-
-## Acknowledgements 🙏
-
-- **Tomcat** for providing the web server. 🚀
-- **MySQL** and **XAMPP** for the database and local development environment. 🗃️
-
+Please see [CONTRIBUTING](CONTRIBUTING.md) for more info.

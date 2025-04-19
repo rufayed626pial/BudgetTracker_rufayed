@@ -1,0 +1,10 @@
+0:0:0:0:0:0:0:1 - - [19/Apr/2025:04:32:52 +0600] "GET /BudgetTracker HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [19/Apr/2025:04:32:52 +0600] "GET /BudgetTracker/ HTTP/1.1" 200 940
+0:0:0:0:0:0:0:1 - - [19/Apr/2025:04:32:52 +0600] "GET /BudgetTracker/css/style.css HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [19/Apr/2025:04:35:13 +0600] "POST /BudgetTracker/AddBudgetServlet HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [19/Apr/2025:04:35:13 +0600] "GET /BudgetTracker/index.jsp HTTP/1.1" 200 1503
+0:0:0:0:0:0:0:1 - - [19/Apr/2025:04:35:20 +0600] "GET /BudgetTracker/edit.jsp?id=2 HTTP/1.1" 200 602
+0:0:0:0:0:0:0:1 - - [19/Apr/2025:04:35:41 +0600] "POST /BudgetTracker/EditBudgetServlet HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [19/Apr/2025:04:35:41 +0600] "GET /BudgetTracker/index.jsp HTTP/1.1" 200 1511
+0:0:0:0:0:0:0:1 - - [19/Apr/2025:04:37:29 +0600] "POST /BudgetTracker/AddBudgetServlet HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [19/Apr/2025:04:37:29 +0600] "GET /BudgetTracker/index.jsp HTTP/1.1" 200 1887
